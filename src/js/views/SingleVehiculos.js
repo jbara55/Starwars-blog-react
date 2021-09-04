@@ -10,7 +10,7 @@ export const SingleVehiculo = props => {
 		actions.getVehicle(theid);
 	});
 	return (
-		<div className="card" style={{ width: "18rem" }}>
+		<div className="card justify-content-center mx-auto my-4" style={{ width: "18rem" }}>
 			<div className="card-body">
 				<h5 className="card-title">{store.Vehicle.name}</h5>
 				<p className="card-text">
@@ -55,7 +55,6 @@ export const SingleVehiculo = props => {
 					</span>
 				</Link>
 			</div>
-			∫
 		</div>
 	);
 };
