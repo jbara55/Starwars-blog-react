@@ -12,7 +12,6 @@ import { Personajes } from "./views/Personajes";
 import { Planetas } from "./views/Planetas";
 import { Vehiculos } from "./views/Vehiculos";
 import { Favoritos } from "./views/Favoritos";
-
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -40,7 +39,7 @@ const Layout = () => {
 						<Route exact path="/Vehiculos">
 							<Vehiculos />
 						</Route>
-						<Route exact path="Favoritos">
+						<Route exact path="/Favoritos">
 							<Favoritos />
 						</Route>
 						<Route exact path="/DetallePersonaje/:theid">

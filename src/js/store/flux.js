@@ -120,7 +120,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ Favoritos: [...store.Favoritos, name] });
 			},
 
-			removeFavorite: posicion => {},
+			removeFavorite: posicion => {
+				const store = getStore();
+				console.log(posicion);
+				const newListfav = store.Favoritos.filter(key => key !== posicion);
+				setStore({ Favoritos: newListfav });
+			},
 
 			changeColor: (index, color) => {
 				//get the store

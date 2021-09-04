@@ -39,7 +39,7 @@ export const Navbar = () => {
 					</Link>
 				</a>
 				<a className="nav-item">
-					<Link to="/favoritos">
+					<Link to="/Favoritos">
 						<a className="nav-link active" href="#">
 							Favoritos
 						</a>

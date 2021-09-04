@@ -25,7 +25,8 @@ export const Cardpersonajes = () => {
 										type="button"
 										className="btn btn-outline-info "
 										onClick={() => {
-											actions.addFavorite(person.name);
+											actions.addFavorite(persona.name);
+											console.log(store.Favoritos);
 										}}>
 										Favoritos
 									</button>

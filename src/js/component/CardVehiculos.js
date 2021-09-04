@@ -26,6 +26,7 @@ export const CardVehiculos = () => {
 										className="btn btn-outline-info "
 										onClick={() => {
 											actions.addFavorite(vehiculo.name);
+											console.log(store.Favoritos);
 										}}>
 										Favoritos
 									</button>
