@@ -16,12 +16,17 @@ export const CardVehiculos = () => {
 									<p className="card-text">
 										Haz clic en el botón Detalles, para obtener más información
 									</p>
-									<Link>
+									<Link to={"/detalleVehiculo/" + vehiculo.uid}>
 										<button type="button" className="btn btn-outline-success mx-3">
 											Detalles
 										</button>
 									</Link>
-									<button type="button" className="btn btn-outline-info ">
+									<button
+										type="button"
+										className="btn btn-outline-info "
+										onClick={() => {
+											actions.addFavorite(vehiculo.name);
+										}}>
 										Favoritos
 									</button>
 								</div>

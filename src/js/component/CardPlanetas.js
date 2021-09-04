@@ -21,7 +21,12 @@ export const CardPlanetas = () => {
 											Ver más
 										</button>
 									</Link>
-									<button type="button" className="btn btn-outline-info ">
+									<button
+										type="button"
+										className="btn btn-outline-info "
+										onClick={() => {
+											actions.addFavorite(planeta.name);
+										}}>
 										Favoritos
 									</button>
 								</div>

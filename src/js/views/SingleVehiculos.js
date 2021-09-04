@@ -12,9 +12,18 @@ export const SingleVehiculo = props => {
 	return (
 		<div className="card" style={{ width: "18rem" }}>
 			<div className="card-body">
-				<h5 className="card-title">{store.vehicle.name}</h5>
+				<h5 className="card-title">{store.Vehicle.name}</h5>
 				<p className="card-text">
-					<ul />
+					<ul>
+						<li>{store.Vehicle.model}</li>
+						<li>{store.Vehicle.vehicle_class}</li>
+						<li>{store.Vehicle.manufacturer}</li>
+						<li>{store.Vehicle.cost_in_credits}</li>
+						<li>{store.Vehicle.length}</li>
+						<li>{store.Vehicle.crew}</li>
+						<li>{store.Vehicle.passengers}</li>
+						<li>{store.Vehicle.cargo_capacity}</li>
+					</ul>
 				</p>
 				<Link to="/">
 					<span className="btn btn-primary btn" href="#" role="button">

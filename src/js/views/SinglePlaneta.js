@@ -9,6 +9,7 @@ export const SinglePlaneta = props => {
 	useEffect(() => {
 		actions.getPlanet(theid);
 	});
+
 	return (
 		<div className="card" style={{ width: "18rem" }}>
 			<div className="card-body">

@@ -16,9 +16,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			allPeople: [],
 			allPlanets: [],
 			allVehicles: [],
-			People: {},
-			PLanet: {},
-			Vehicle: {}
+			People: [],
+			Planet: [],
+			Vehicle: [],
+			Favoritos: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -113,6 +114,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
+
+			addFavorite: name => {
+				const store = getStore();
+				setStore({ Favoritos: [...store.Favoritos, name] });
+			},
+
+			removeFavorite: posicion => {},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
