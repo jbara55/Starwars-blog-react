@@ -10,7 +10,7 @@ export const Cardpersonajes = () => {
 				<div className="row ">
 					{store.allPeople.map((persona, posicion) => {
 						return (
-							<div className="card" style={{ width: "18rem" }} key={posicion}>
+							<div className="card mx-auto my-4" style={{ width: "18rem" }} key={posicion}>
 								<div className="card-body">
 									<h5 className="card-title">{persona.name}</h5>
 									<p className="card-text">

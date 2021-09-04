@@ -11,7 +11,7 @@ export const CardFavoritos = () => {
 					<div className="row ">
 						{store.Favoritos.map((favorito, posicion) => {
 							return (
-								<div className="card" style={{ width: "18rem" }} key={posicion}>
+								<div className="card mx-auto my-4" style={{ width: "18rem" }} key={posicion}>
 									<div className="card-body">
 										<h5 className="card-title">{favorito}</h5>
 										<p className="card-text">Este es Tu Favorito</p>

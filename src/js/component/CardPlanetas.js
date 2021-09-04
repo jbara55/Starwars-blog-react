@@ -10,7 +10,7 @@ export const CardPlanetas = () => {
 				<div className="row ">
 					{store.allPlanets.map((planeta, posicion) => {
 						return (
-							<div className="card" style={{ width: "18rem" }} key={posicion}>
+							<div className="card mx-auto my-4" style={{ width: "18rem" }} key={posicion}>
 								<div className="card-body">
 									<h5 className="card-title">{planeta.name}</h5>
 									<p className="card-text">

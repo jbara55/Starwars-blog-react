@@ -4,7 +4,7 @@ import logo from "../../img/logo1.png";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light">
+		<nav className="navbar navbar-light bg-dark">
 			<div className="container">
 				<a className="navbar-brand">
 					<img src={logo} alt="" width="60" height="44" />
