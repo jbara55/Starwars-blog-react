@@ -16,13 +16,34 @@ export const SinglePlaneta = props => {
 				<h5 className="card-title">{store.Planet.name}</h5>
 				<p className="card-text">
 					<ul>
-						<li>{store.Planet.diameter}</li>
-						<li>{store.Planet.rotation_period}</li>
-						<li>{store.Planet.orbital_period}</li>
-						<li>{store.Planet.gravity}</li>
-						<li>{store.Planet.population}</li>
-						<li>{store.Planet.climate}</li>
-						<li>{store.Planet.terrain}</li>
+						<li>
+							El diametro del planeta es:
+							{store.Planet.diameter}
+						</li>
+						<li>
+							El tiempo de rotación del planeta es:
+							{store.Planet.rotation_period}
+						</li>
+						<li>
+							El tiempo de traslación del planeta es:
+							{store.Planet.orbital_period}
+						</li>
+						<li>
+							la gravedad del planeta es:
+							{store.Planet.gravity}
+						</li>
+						<li>
+							La poblacion del planeta es:
+							{store.Planet.population}
+						</li>
+						<li>
+							El clima del planeta es:
+							{store.Planet.climate}
+						</li>
+						<li>
+							El terreno del Planet es:
+							{store.Planet.terrain}
+						</li>
 					</ul>
 				</p>
 				<Link to="/">

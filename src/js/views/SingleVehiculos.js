@@ -15,14 +15,38 @@ export const SingleVehiculo = props => {
 				<h5 className="card-title">{store.Vehicle.name}</h5>
 				<p className="card-text">
 					<ul>
-						<li>{store.Vehicle.model}</li>
-						<li>{store.Vehicle.vehicle_class}</li>
-						<li>{store.Vehicle.manufacturer}</li>
-						<li>{store.Vehicle.cost_in_credits}</li>
-						<li>{store.Vehicle.length}</li>
-						<li>{store.Vehicle.crew}</li>
-						<li>{store.Vehicle.passengers}</li>
-						<li>{store.Vehicle.cargo_capacity}</li>
+						<li>
+							El tipo de modelo:
+							{store.Vehicle.model}
+						</li>
+						<li>
+							La clase del vehiculo es:
+							{store.Vehicle.vehicle_class}
+						</li>
+						<li>
+							El fabricante del vehiculo es:
+							{store.Vehicle.manufacturer}
+						</li>
+						<li>
+							El valor del vehiculo es:
+							{store.Vehicle.cost_in_credits} creditos
+						</li>
+						<li>
+							El largo del vehiculo es:
+							{store.Vehicle.length}
+						</li>
+						<li>
+							El numero de tripulantes es:
+							{store.Vehicle.crew}
+						</li>
+						<li>
+							El numero de pasajeros es:
+							{store.Vehicle.passengers}
+						</li>
+						<li>
+							La capacidad de carga del vehiculo es:
+							{store.Vehicle.cargo_capacity}
+						</li>
 					</ul>
 				</p>
 				<Link to="/">
